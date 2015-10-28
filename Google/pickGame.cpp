@@ -4,7 +4,8 @@
 	> Mail: zhenchaogan@gmail.com
 	> Blog: http://gzc.github.io
 	> Created Time: Tue Oct 27 16:56:05 2015
- > Description: Given an array of int, two people can only pick at the beginning or end, if you go first how to get maximum sum.
+    > Link : http://www.1point3acres.com/bbs/thread-144376-1-1.html
+    > Description: Given an array of int, two people can only pick at the beginning or end, if you go first how to get maximum sum.
  ************************************************************************/
 #include<iostream>
 #include<cstdio>
