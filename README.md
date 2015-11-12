@@ -4,3 +4,7 @@
 3. Given a sorted array,find occuring time more than n/4 times popular number. [code](./Google/oneforth.cpp) [link](http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=145654&extra=page%3D1%26filter%3Dauthor%26orderby%3Ddateline%26sortid%3D311%26sortid%3D311%26orderby%3Ddateline)
 4. 输出任意permutation使得List中的相同element的间距要小于minDistance [code](./Google/RearrangeString.cpp) [link](http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=141400&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26sortid%3D311)
 5. 给一个词典和一个target word,问这个word是不是smashable. smashable的定义是这个词在字典里并且它不停地任意删除一个字母得到的单词也在词典里. [code](./Google/smashable.cpp) [link](http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=145654&extra=page%3D1%26filter%3Dauthor%26orderby%3Ddateline%26sortid%3D311%26sortid%3D311%26orderby%3Ddateline)
+
+
+#Linkin
+1. Update a set of (upto) K elements, when you see a new element from an incoming stream, to ensure that every element seen so far, has an equal chance of making it into the set of K elements that we are maintaining. [code](./Linkin/random.cpp)
