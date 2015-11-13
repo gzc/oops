@@ -8,3 +8,6 @@
 
 #Linkin
 1. Update a set of (upto) K elements, when you see a new element from an incoming stream, to ensure that every element seen so far, has an equal chance of making it into the set of K elements that we are maintaining. [code](./Linkin/random.cpp)
+
+#Yahho
+1. 给一个链表8->2->4 表示时间1，8号叶子浮上来，时间2，2号叶子浮上来，时间3，4号叶子浮上来；叶子一旦浮上来，就一直在。有一个青蛙从起点开始，最远能跳k步，河岸宽是width. 青蛙在叶子间跳跃不需要时间. 问青蛙最快什么时候能过河. [code](./Yahoo/frog.cpp)
