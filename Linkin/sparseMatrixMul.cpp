@@ -49,35 +49,20 @@ public:
         int col2 = B[0].size();
         
         vector<vector<int>> res(row1, vector<int>(col2, 0));
-        
-        vector<unordered_map<int,int>> CacheA(row1);
         vector<unordered_map<int,int>> CacheB(col2);
-        
-        for(int i = 0;i < row1;i++)
-            for(int j = 0;j < col1;j++)
-                if(A[i][j] != 0)
-                    CacheA[i][j] = A[i][j];
         
         for(int i = 0;i < row2;i++)
             for(int j = 0;j < col2;j++)
                 if(B[i][j] != 0)
                     CacheB[j][i] = B[i][j];
         
-        cout << CacheA[0].size() << endl;
-        cout << CacheA[1].size() << endl;
-        cout << CacheA[2].size() << endl;
-        cout << CacheB[0].size() << endl;
-        cout << CacheB[1].size() << endl;
-        
         for(int i = 0;i < row1;i++) {
-            unordered_map<int, int> left = CacheA[i];
-            if(left.size() == 0) continue;
             for(int j = 0;j < col2;j++) {
                 unordered_map<int, int> right = CacheB[j];
                 if(right.size() == 0) continue;
-                for(auto e : left) {
-                    if(right.count(e.first) > 0) {
-                        res[i][j] += e.second * right[e.first];
+                for(int k = 0;k < col1;k++) {
+                    if(A[i][k] != 0 && right.count(k) > 0) {
+                        res[i][j] += A[i][k] * right[k];
                     }
                 }
             }
@@ -86,6 +71,7 @@ public:
         return res;
     }
 };
+
 
 
 int main() {
